@@ -1,112 +1,84 @@
 import Image from "next/image";
+import Owl1 from "@/public/owl1.svg";
+import Owl2 from "@/public/owl2.svg";
+import Owl3 from "@/public/owl3.svg";
+import Owl4 from "@/public/owl4.svg";
+import Owl5 from "@/public/owl5.svg";
+import Tech from "@/public/tech.png";
+import Mod from "@/public/mod.png";
+import Doc from "@/public/doc.png";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <div className="min-w-80 bg-red-400 bg-hero bg-no-repeat bg-cover h-screen overflow-hidden bg-center relative">
+        <div className="absolute flex flex-col gap-y-5 top-[clamp(85px,22vw,190px)] left-[85px] text-[#E2E2E2]">
+          <h4 className="text-[1.7rem] font-bold w-[33rem]">
+            Professional counseling Remote and on-site counseling
+          </h4>
+          <h3 className="text-[clamp(2rem,4vw,5rem)] font-bold w-[61rem]">
+            CONSUMERS IN THE WORLD OF PACKAGING
+          </h3>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="px-8">
+        <h3 className="text-3xl font-semibold mt-8 text-center w-[902px] mx-auto">
+          WHAT IS CONSULTING THE EQUIPMENT CUSTOMER ABOUT?
+        </h3>
+        <div className="flex items-center justify-center mt-5 flex-wrap gap-4">
+          <div className="flex flex-col justify-center items-center border rounded-lg h-[300px] p-4 gap-y-4 shadow-sm">
+            <Image src={Owl1} alt="owl" />
+            <span className="font-medium w-[250px] text-center">
+              It&apos;s about reducing production costs
+            </span>
+          </div>
+          <div className="flex flex-col justify-center items-center border rounded-lg h-[300px] p-4 gap-y-4 shadow-sm">
+            <Image src={Owl2} alt="owl" />
+            <span className="font-medium w-[250px] text-center">
+              It&apos;s about improving product quality
+            </span>
+          </div>
+          <div className="flex flex-col justify-center items-center border rounded-lg h-[300px] p-4 gap-y-4 shadow-sm">
+            <Image src={Owl3} alt="owl" />
+            <span className="font-medium w-[250px] text-center">
+              It&apos;s about a strong competitive position
+            </span>
+          </div>
+          <div className="flex flex-col justify-center items-center border rounded-lg h-[300px] p-4 gap-y-4 shadow-sm">
+            <Image src={Owl4} alt="owl" />
+            <span className="font-medium w-[250px] text-center">
+              This is about effective investment in production
+            </span>
+          </div>
+          <div className="flex flex-col justify-center items-center border rounded-lg h-[300px] p-4 gap-y-4 shadow-sm">
+            <Image src={Owl5} alt="owl" />
+            <span className="font-medium w-[250px] text-center">
+              This is about the production development strategy
+            </span>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+      <hr className="mt-8" />
+      <div className="px-8">
+        <h3 className="text-3xl font-semibold mt-8 text-center">
+          OTHER SERVICE
+        </h3>
+        <div className="flex items-center justify-center gap-x-4 mt-8">
+          <div className="bg-[#0059C9] max-w-[350px] min-w-[320px] rounded-lg h-[287px] p-5 flex flex-col justify-between">
+            <Image src={Tech} alt="tech" />
+            <span className="text-white text-lg">Commissioning works</span>
+          </div>
+          <div className="bg-[#A90201] max-w-[350px] min-w-[320px] rounded-lg h-[287px] p-5 flex flex-col justify-between">
+            <Image src={Mod} alt="mod" />
+            <span className="text-white text-lg">Equipment modernization</span>
+          </div>
+          <div className="bg-[#656565] max-w-[320px] min-w-[320px] rounded-lg h-[287px] p-5 flex flex-col justify-between w-full">
+            <Image src={Doc} alt="doc" />
+            <span className="text-white text-lg">
+              Translations of technical documentation{" "}
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          </div>
+        </div>
       </div>
     </main>
   );
