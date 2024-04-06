@@ -1,7 +1,10 @@
 import CatalogCard from "@/components/ui/catalog-card";
+import { getCatalogs } from "@/lib/data";
 import React from "react";
 
-const Page = () => {
+export default async function Page() {
+  const catalogs = await getCatalogs();
+
   return (
     <main>
       <div className="relative">
@@ -36,13 +39,10 @@ const Page = () => {
         </div>
       </div>
       <div className="grid grid-cols-4 gap-4 py-8 px-4">
-        <CatalogCard />
-        <CatalogCard />
-        <CatalogCard />
-        <CatalogCard />
+        {catalogs?.map((catalog) => (
+          <CatalogCard key={catalog.id} catalog={catalog} />
+        ))}
       </div>
     </main>
   );
-};
-
-export default Page;
+}
