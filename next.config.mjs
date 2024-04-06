@@ -6,6 +6,10 @@ const nextConfig = {
         hostname: "localhost",
         protocol: "http",
       },
+      {
+        hostname: "eximpack-be.vercel.app",
+        protocol: "https",
+      },
     ],
   },
 };
