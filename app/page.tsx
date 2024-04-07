@@ -7,8 +7,11 @@ import Owl4 from "@/public/owl4.svg";
 import Owl5 from "@/public/owl5.svg";
 
 import ServiceCard from "@/components/ui/service-card";
+import { getServices } from "@/lib/data";
 
-export default function Home() {
+export default async function Home() {
+  const services = await getServices();
+
   return (
     <main>
       <div className="min-w-80 bg-red-400 bg-hero bg-no-repeat bg-cover h-screen overflow-hidden bg-center relative">
@@ -94,18 +97,14 @@ export default function Home() {
           OTHER SERVICE
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 place-items-center lg:grid-cols-3 gap-4 mt-8">
-          <ServiceCard
-            image="/tech.png"
-            title="Commissioning works"
-            color="#0059C9"
-          />
-
-          <ServiceCard
-            image="/mod.png"
-            title="Equipment modernization"
-            color="#A90201"
-          />
-          <ServiceCard image="/doc.png" title="Documentation" color="#656565" />
+          {services?.map((service) => (
+            <ServiceCard
+              key={service.id}
+              image={service.image}
+              title={service.name}
+              color={service.color}
+            />
+          ))}
         </div>
       </section>
     </main>
