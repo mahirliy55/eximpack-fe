@@ -15,7 +15,15 @@ export default async function Page() {
           autoPlay
           muted
           loop
-          className="w-full h-[338px] object-cover"
+          className="w-full h-[338px] object-cover hidden md:block"
+        >
+          <source src="/catalog.mp4" type="video/mp4" />
+        </video>
+        <video
+          width="320"
+          height="338"
+          muted
+          className="w-full h-[338px] object-cover md:hidden"
         >
           <source src="/catalog.mp4" type="video/mp4" />
         </video>

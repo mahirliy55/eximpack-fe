@@ -9,11 +9,18 @@ const Page = () => {
         <video
           width="320"
           height="338"
-          preload="auto"
           autoPlay
           muted
           loop
-          className="w-full h-screen object-cover"
+          className="w-full h-screen object-cover hidden md:block"
+        >
+          <source src="/bg-big.mp4" type="video/mp4" />
+        </video>
+        <video
+          width="320"
+          height="338"
+          muted
+          className="w-full h-screen object-cover md:hidden"
         >
           <source src="/bg-big.mp4" type="video/mp4" />
         </video>
@@ -25,19 +32,19 @@ const Page = () => {
           }}
         />
         <div className="absolute top-20 px-8 flex flex-col gap-y-6 left-20">
-          <div className="flex items-center gap-x-4">
-            <Image src={Owl} alt="owl" />
-            <h4 className="uppercase text-white text-3xl font-semibold w-[300px]">
+          <div className="flex flex-col md:flex-row items-center gap-x-4">
+            <Image src={Owl} alt="owl" className="" />
+            <h4 className="uppercase text-white text-3xl font-semibold max-w-[300px]">
               reliable supply of equipment
             </h4>
           </div>
-          <p className="text-white font-medium text-xl w-[505px]">
+          <p className="text-white font-medium text-xl max-w-[505px]">
             Eximpak equipment is a Russian supplier of equipment for the
             packaging and processing industry since 1997.
           </p>
         </div>
       </div>
-      <div className="mt-8 px-8 mx-20">
+      <div className="mt-8 px-8 md:mx-20">
         <div className="flex flex-col gap-y-8">
           <p className="text-lg font-medium text-black">
             Today the Eximpak-Equipment company is the largest Russian supplier
@@ -56,7 +63,7 @@ const Page = () => {
             that more than 2,500 units of equipment were installed and launched
             in Russia alone.
           </p>
-          <div className="border-2 border-[#EB0000] p-5 flex flex-col justify-between rounded-lg w-[600px]">
+          <div className="border-2 border-[#EB0000] p-5 flex flex-col justify-between rounded-lg max-w-[600px]">
             <h4 className="text-[#EB0000] font-semibold">OUR MISSION</h4>
             <p className="mt-4 text-[#EB0000] font-medium">
               Development and implementation of technologies that are optimal
