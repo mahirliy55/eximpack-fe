@@ -59,6 +59,36 @@ export default function Home() {
         </div>
       </section>
       <hr className="mt-8" />
+      <section className="px-8 mt-8">
+        <h4 className="text-[#333333] font-semibold text-3xl text-center">
+          EXPERIENCE AND GUARANTEE
+        </h4>
+        <div className="flex items-center justify-between mt-4">
+          <div className="flex flex-col gap-y-4 w-[600px]">
+            <p className="text-xl">
+              Our company has almost a quarter of a century of experience. With
+              each new contract, this experience is converted into your
+              confidence that the equipment will bring profit.
+            </p>
+            <p className="text-xl">
+              Therefore, each customer of our equipment can have a 100%
+              guarantee of the right investment.
+            </p>
+          </div>
+          <div className="flex flex-col relative">
+            <span className="absolute top-[50px] left-[235px] bg-[#EB0000] w-[70px] rotate-45 text-center rounded-lg text-white">
+              client
+            </span>
+            <h3 className="text-[#333333] text-[10rem] font-bold">120</h3>
+            <span className="text-lg w-[515px]">
+              passed our consultations and increased production efficiency by at
+              least 40%
+            </span>
+          </div>
+        </div>
+      </section>
+      <hr className="mt-8" />
+
       <section className="px-8">
         <h3 className="text-3xl font-semibold mt-8 text-center">
           OTHER SERVICE
