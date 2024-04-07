@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 export default function HeaderMenu() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     if (isOpen) {
@@ -13,6 +15,10 @@ export default function HeaderMenu() {
       document.body.style.overflow = "auto";
     }
   }, [isOpen]);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
     <>
