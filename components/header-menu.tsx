@@ -18,7 +18,7 @@ export default function HeaderMenu() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="lg:hidden text-white flex items-center justify-end"
+        className="md:hidden text-white flex items-center justify-end"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
