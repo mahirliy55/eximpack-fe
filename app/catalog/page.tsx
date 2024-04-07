@@ -38,7 +38,7 @@ export default async function Page() {
           <h4 className="uppercase text-white text-2xl font-semibold">
             new equipment
           </h4>
-          <p className="text-white font-medium text-xl w-[1120px]">
+          <p className="text-white font-medium md:text-xl text-sm md:w-[1120px] w-full">
             We present a complete catalog of new equipment from the best
             manufacturers with warranty support. The catalog shows both series
             of machines and individual units of equipment (models). Some of them
@@ -46,7 +46,7 @@ export default async function Page() {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-4 py-8 px-4">
+      <div className="grid md:grid-cols-4 grid-cols-1 gap-4 py-8 px-4">
         {catalogs?.map((catalog) => (
           <CatalogCard key={catalog.id} catalog={catalog} />
         ))}
