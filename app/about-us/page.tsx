@@ -13,7 +13,7 @@ const Page = () => {
           autoPlay
           muted
           loop
-          className="w-full h-screen object-cover"
+          className="md:w-full md:h-screen object-cover w-full h-full"
         >
           <source src="/bg-big.mp4" type="video/mp4" />
         </video>
@@ -24,20 +24,24 @@ const Page = () => {
               "linear-gradient(92.54deg,#252525e9 1.96%,rgba(37,37,37,0) 97.87%)",
           }}
         />
-        <div className="absolute top-20 px-8 flex flex-col gap-y-6 left-20">
-          <div className="flex items-center gap-x-4">
-            <Image src={Owl} alt="owl" />
-            <h4 className="uppercase text-white text-3xl font-semibold w-[300px]">
+        <div className="absolute md:top-20 top-5 md:px-8 px-0 flex flex-col md:gap-y-6 gap-y-3 md:left-20 left-4">
+          <div className="flex items-center md:gap-x-4 gap-x-2">
+            <Image
+              src={Owl}
+              alt="owl"
+              className="w-[75px] h-[75px] md:w-[144px] md:h-[251px]"
+            />
+            <h4 className="uppercase text-white md:text-3xl text-lg font-semibold md:w-[300px] w-[200px]">
               reliable supply of equipment
             </h4>
           </div>
-          <p className="text-white font-medium text-xl w-[505px]">
+          <p className="text-white font-medium md:text-xl md:w-[505px] w-[304px] text-sm">
             Eximpak equipment is a Russian supplier of equipment for the
             packaging and processing industry since 1997.
           </p>
         </div>
       </div>
-      <div className="mt-8 px-8 mx-20">
+      <div className="mt-8 md:px-8 px-0 md:mx-20 mx-5">
         <div className="flex flex-col gap-y-8">
           <p className="text-lg font-medium text-black">
             Today the Eximpak-Equipment company is the largest Russian supplier
@@ -56,7 +60,7 @@ const Page = () => {
             that more than 2,500 units of equipment were installed and launched
             in Russia alone.
           </p>
-          <div className="border-2 border-[#EB0000] p-5 flex flex-col justify-between rounded-lg w-[600px]">
+          <div className="border-2 border-[#EB0000] p-5 flex flex-col justify-between rounded-lg md:w-[600px] w-full">
             <h4 className="text-[#EB0000] font-semibold">OUR MISSION</h4>
             <p className="mt-4 text-[#EB0000] font-medium">
               Development and implementation of technologies that are optimal
