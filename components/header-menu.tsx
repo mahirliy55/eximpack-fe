@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import Owl from "@/public/owl.svg";
 
 export default function HeaderMenu() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -43,7 +45,6 @@ export default function HeaderMenu() {
           <line x1="4" x2="20" y1="18" y2="18" />
         </svg>
       </button>
-
       <nav
         className={`lg:hidden fixed top-0 left-0 w-full h-full bg-[#252525] z-50 transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
@@ -69,7 +70,15 @@ export default function HeaderMenu() {
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </button>
+
         <ul className="flex flex-col items-center justify-center h-full gap-y-5">
+          <Image
+            src={Owl}
+            alt="owl"
+            width={55}
+            height={55}
+            className="justify-self-center "
+          />
           <li>
             <Link href="/" className="text-white text-lg">
               Consulting
