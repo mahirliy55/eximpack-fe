@@ -17,10 +17,10 @@ export default async function Home() {
       <div className="min-w-80 bg-red-400 bg-hero bg-no-repeat bg-cover h-96 md:h-screen overflow-hidden bg-center relative">
         <div className="absolute flex flex-col gap-y-5 top-[clamp(85px,22vw,190px)] lg:left-[85px] text-[#E2E2E2]">
           <h4 className="md:text-[1.7rem] font-bold max-w-[33rem] text-center md:text-left">
-            Professional counseling Remote and on-site counseling
+            Professional consulting for packaging industry - remote and on-site
           </h4>
-          <h3 className="text-[clamp(2rem,4vw,5rem)] font-bold max-w-[61rem] text-center md:text-left">
-            CONSUMERS IN THE WORLD OF PACKAGING
+          <h3 className="text-[clamp(2rem,4vw,5rem)] font-bold max-w-[61rem] uppercase text-center md:text-left">
+            Experts IN THE WORLD OF PACKAGING
           </h3>
         </div>
       </div>

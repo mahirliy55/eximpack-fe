@@ -20,8 +20,7 @@ const Footer = () => {
             </span>
           </div>
           <div className="flex flex-col">
-            <span className="md:text-base text-xs">INN 7802382558 </span>
-            <span className="md:text-base text-xs">OGRN 1077847045451</span>
+            <span className="md:text-base text-xs">TRN 104077697100001</span>
           </div>
         </div>
         <div className="flex justify-between mt-10">
