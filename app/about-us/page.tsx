@@ -20,7 +20,7 @@ const Page = () => {
           width="320"
           height="338"
           muted
-          className="w-full h-screen object-cover md:hidden"
+          className="w-full h-[338px] object-cover md:hidden"
         >
           <source src="/bg-big.mp4" type="video/mp4" />
         </video>
@@ -31,7 +31,7 @@ const Page = () => {
               "linear-gradient(92.54deg,#252525e9 1.96%,rgba(37,37,37,0) 97.87%)",
           }}
         />
-        <div className="absolute md:top-20 top-5 md:px-8 px-0 flex flex-col md:gap-y-6 gap-y-3 md:left-20 left-4">
+        <div className="absolute top-20 md:px-8 px-0 flex flex-col md:gap-y-6 gap-y-3 md:left-20 left-4">
           <div className="flex items-center md:gap-x-4 gap-x-2">
             <Image
               src={Owl}
