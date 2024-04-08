@@ -1,3 +1,4 @@
+import { unstable_noStore } from "next/cache";
 import { Catalog, Service } from "./definitions";
 
 export async function getServices(): Promise<Service[]> {
@@ -19,9 +20,13 @@ export async function getServices(): Promise<Service[]> {
 }
 
 export async function getCatalogs(): Promise<Catalog[]> {
+  unstable_noStore();
   try {
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/catalogs/`,
+      {
+        cache: "no-store",
+      }
     );
     const catalogs = await response.json();
 
