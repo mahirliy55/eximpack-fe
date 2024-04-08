@@ -66,7 +66,7 @@ export default async function Home() {
         <h4 className="text-[#333333] font-semibold text-3xl text-center">
           EXPERIENCE AND GUARANTEE
         </h4>
-        <div className="flex md:flex-row flex-col items-center justify-center gap-x-28 mt-4">
+        <div className="flex lg:flex-row flex-col items-center justify-center gap-x-28 mt-4">
           <div className="flex flex-col gap-y-4 md:w-[600px] w-full">
             <p className="text-xl">
               Our company has almost a quarter of a century of experience. With
@@ -79,10 +79,12 @@ export default async function Home() {
             </p>
           </div>
           <div className="flex flex-col relative">
-            <span className="absolute top-[50px] md:left-[235px] left-[216px] bg-[#EB0000] w-[70px] rotate-45 text-center rounded-lg text-white">
+            <span className="absolute top-[45px] md:left-[235px] left-[270px] bg-[#EB0000] w-[70px] rotate-45 text-center rounded-lg text-white">
               client
             </span>
-            <h3 className="text-[#333333] text-[10rem] font-bold">120</h3>
+            <h3 className="text-[#333333] text-[10rem] font-bold text-center md:text-start">
+              120
+            </h3>
             <span className="text-lg md:w-[515px] w-full">
               passed our consultations and increased production efficiency by at
               least 40%

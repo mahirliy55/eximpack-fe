@@ -13,6 +13,7 @@ const Page = () => {
           autoPlay
           muted
           loop
+
           className="md:w-full md:h-screen object-cover w-full h-full"
         >
           <source src="/bg-big.mp4" type="video/mp4" />
