@@ -7,7 +7,7 @@ const nextConfig = {
         protocol: "http",
       },
       {
-        hostname: "eximpack-be.vercel.app",
+        hostname: "eximpack-backend-kjyttzjf2a-ey.a.run.app",
         protocol: "https",
       },
     ],
