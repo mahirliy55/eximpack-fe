@@ -14,13 +14,13 @@ export default async function Home() {
 
   return (
     <main>
-      <div className="min-w-80 bg-red-400 bg-hero bg-no-repeat bg-cover h-screen overflow-hidden bg-center relative">
-        <div className="absolute flex flex-col gap-y-5 top-[clamp(85px,22vw,190px)] lg:left-[85px] text-[#E2E2E2]">
+      <div className="min-w-80 bg-red-400 bg-hero bg-no-repeat bg-cover h-96 md:h-screen overflow-hidden bg-center relative">
+        <div className="absolute flex flex-col gap-y-5 top-[clamp(85px,22vw,190px)] lg:left-[85px] md:left-[70px] text-[#E2E2E2] ">
           <h4 className="md:text-[1.7rem] font-bold max-w-[33rem] text-center md:text-left">
-            Professional counseling Remote and on-site counseling
+            Professional consulting for packaging industry - remote and on-site
           </h4>
-          <h3 className="text-[clamp(2rem,4vw,5rem)] font-bold max-w-[61rem] text-center md:text-left">
-            CONSUMERS IN THE WORLD OF PACKAGING
+          <h3 className="text-[clamp(2rem,4vw,5rem)] font-bold max-w-[61rem] uppercase text-center md:text-left">
+            Experts IN THE WORLD OF PACKAGING
           </h3>
         </div>
       </div>
@@ -82,7 +82,7 @@ export default async function Home() {
             <span className="absolute top-[45px] md:left-[235px] left-[270px] bg-[#EB0000] w-[70px] rotate-45 text-center rounded-lg text-white">
               client
             </span>
-            <h3 className="text-[#333333] text-[10rem] font-bold text-center md:text-start">
+            <h3 className="text-[#333333] text-[10rem] font-bold text-center lg:text-start">
               120
             </h3>
             <span className="text-lg md:w-[515px] w-full">
@@ -102,9 +102,9 @@ export default async function Home() {
           {services?.map((service) => (
             <ServiceCard
               key={service.id}
-              image={service.image}
               title={service.name}
               color={service.color}
+              order={service.order}
             />
           ))}
         </div>

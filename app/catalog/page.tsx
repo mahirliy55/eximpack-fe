@@ -15,7 +15,15 @@ export default async function Page() {
           autoPlay
           muted
           loop
-          className="w-full h-[338px] object-cover"
+          className="w-full h-[338px] object-cover hidden md:block"
+        >
+          <source src="/catalog.mp4" type="video/mp4" />
+        </video>
+        <video
+          width="320"
+          height="338"
+          muted
+          className="w-full h-[338px] object-cover md:hidden"
         >
           <source src="/catalog.mp4" type="video/mp4" />
         </video>
@@ -30,7 +38,7 @@ export default async function Page() {
           <h4 className="uppercase text-white text-2xl font-semibold">
             new equipment
           </h4>
-          <p className="text-white font-medium md:text-xl text-sm md:w-[1120px] w-full">
+          <p className="text-white font-medium md:text-xl text-sm md:max-w-[1120px] w-full">
             We present a complete catalog of new equipment from the best
             manufacturers with warranty support. The catalog shows both series
             of machines and individual units of equipment (models). Some of them

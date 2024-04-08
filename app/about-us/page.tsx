@@ -9,12 +9,18 @@ const Page = () => {
         <video
           width="320"
           height="338"
-          preload="auto"
           autoPlay
           muted
           loop
-
-          className="md:w-full md:h-screen object-cover w-full h-full"
+          className="w-full h-screen object-cover hidden md:block"
+        >
+          <source src="/bg-big.mp4" type="video/mp4" />
+        </video>
+        <video
+          width="320"
+          height="338"
+          muted
+          className="w-full h-screen object-cover md:hidden"
         >
           <source src="/bg-big.mp4" type="video/mp4" />
         </video>
