@@ -8,7 +8,7 @@ const nextConfig = {
       },
       {
         hostname: "eximpack-backend-kjyttzjf2a-ey.a.run.app",
-        protocol: "https",
+        protocol: "http",
       },
     ],
   },
