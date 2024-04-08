@@ -46,7 +46,7 @@ export default async function Page() {
           </p>
         </div>
       </div>
-      <div className="grid md:grid-cols-4 grid-cols-1 gap-4 py-8 px-4">
+      <div className="grid lg:grid-cols-4 sm:grid-cols-2 place-items-center lg:place-items-start grid-cols-1 gap-4 py-8 px-4">
         {catalogs?.map((catalog) => (
           <CatalogCard key={catalog.id} catalog={catalog} />
         ))}
