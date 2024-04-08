@@ -22,11 +22,6 @@ export async function getCatalogs(): Promise<Catalog[]> {
   try {
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/catalogs/`,
-      {
-        next: {
-          revalidate: 3600,
-        },
-      }
     );
     const catalogs = await response.json();
 
