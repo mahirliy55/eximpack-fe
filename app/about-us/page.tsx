@@ -43,16 +43,16 @@ const Page = () => {
             </h4>
           </div>
           <p className="text-white font-medium md:text-xl md:w-[505px] w-[304px] text-sm">
-            Eximpak equipment is a Russian supplier of equipment for the
-            packaging and processing industry since 1997.
+            Eximpack Equipment is a leading international supplier of equipment
+            for the packaging and processing industry since 1997.
           </p>
         </div>
       </div>
       <div className="mt-8 md:px-8 px-0 md:mx-20 mx-5">
         <div className="flex flex-col gap-y-8">
           <p className="text-lg font-medium text-black">
-            Today the Eximpak-Equipment company is the largest Russian supplier
-            of high-performance equipment for the production and processing of
+            Today the Eximpak-Equipment company is the largest supplier of
+            high-performance equipment for the production and processing of
             polymer products and packaging. Together with partners from Taiwan,
             China and Italy, we have been supplying quality equipment to the
             packaging and processing industry since 1997. Among our exclusive
@@ -64,16 +64,14 @@ const Page = () => {
             result of many years of careful selection of partners based on the
             criteria of reliability - price - quality . An indicator of the
             reliability and quality of the equipment we supply can be the fact
-            that more than 2,500 units of equipment were installed and launched
-            in Russia alone.
+            that more than 2,500 units of equipment were installed and launched.
           </p>
           <div className="border-2 border-[#EB0000] p-5 flex flex-col justify-between rounded-lg md:w-[600px] w-full">
             <h4 className="text-[#EB0000] font-semibold">OUR MISSION</h4>
             <p className="mt-4 text-[#EB0000] font-medium">
               Development and implementation of technologies that are optimal
-              for Russia and the CIS countries for the production of bags, films
-              and processing of polymer waste, aimed at maximum investment
-              results for the client.
+              for the production of bags, films and processing of polymer waste,
+              aimed at maximum investment results for the client.
             </p>
             <p className="mt-2 text-[#EB0000] font-medium">
               Use in the technological chain only reliable and high-performance
