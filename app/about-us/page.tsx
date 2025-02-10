@@ -44,7 +44,7 @@ const Page = () => {
           </div>
           <p className="text-white font-medium md:text-xl md:w-[505px] w-[304px] text-sm">
             Eximpack Equipment is a leading international supplier of equipment
-            for the packaging and processing industry since 1997.
+            for the packaging and processing industry.
           </p>
         </div>
       </div>
